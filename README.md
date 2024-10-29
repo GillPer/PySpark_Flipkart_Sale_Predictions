@@ -1,7 +1,5 @@
 # PySpark_Flipkart_Sale_Predictions
 
-# PySpark Flipkart Sale Predictions
-
 This project leverages PySpark to analyze and predict discount percentages for Flipkart products. By analyzing various product attributes, it provides insights into discount strategies, helping business stakeholders make data-driven decisions on sale pricing. Key functionalities include ETL processes, data preprocessing, and model training with evaluation metrics.
 
 ## Table of Contents
