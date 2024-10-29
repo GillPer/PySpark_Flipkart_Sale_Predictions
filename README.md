@@ -55,6 +55,7 @@ The dataset contains Flipkart product details, ratings, prices, and user feedbac
 
 ```bash
 train_data = spark.read.csv('/dbfs/FileStore/train_data.csv', header=True, inferSchema=True)
+```
 
 2. Data Cleaning and Preparation
 - Remove duplicates and handle missing values by either dropping or imputing them.
@@ -62,6 +63,7 @@ train_data = spark.read.csv('/dbfs/FileStore/train_data.csv', header=True, infer
 
 ```bash
 train_data = train_data.na.drop()
+```
 
 3. Feature Engineering
 - Create a new feature discount_percentage using actprice1 and price1.
@@ -71,6 +73,7 @@ train_data = train_data.na.drop()
 ```bash
 from pyspark.sql.functions import col
 train_data = train_data.withColumn('discount_percentage', (col('actprice1') - col('price1')) / col('actprice1') * 100)
+```
 
 4. Model Building
 - Split the data into training and validation sets.
@@ -81,6 +84,7 @@ train_data = train_data.withColumn('discount_percentage', (col('actprice1') - co
 from pyspark.ml.regression import LinearRegression
 lr = LinearRegression(featuresCol='features', labelCol='discount_percentage')
 model = lr.fit(training_set)
+```
 
 5. Evaluation
 - Use metrics like RMSE (Root Mean Squared Error) and R2 to evaluate model performance on the validation set.
@@ -89,6 +93,7 @@ model = lr.fit(training_set)
 from pyspark.ml.evaluation import RegressionEvaluator
 evaluator = RegressionEvaluator(labelCol="discount_percentage", predictionCol="prediction", metricName="rmse")
 rmse = evaluator.evaluate(predictions)
+```
 
 6. Results and Visualization
 - Visualize feature importance, model predictions, and actual vs. predicted values using Matplotlib or Seaborn in Jupyter Notebooks.
