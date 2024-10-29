@@ -33,3 +33,8 @@ This project predicts the discount percentages on Flipkart products based on his
    ```bash
    git clone https://github.com/yourusername/flipkart-sale-prediction.git
    cd flipkart-sale-prediction
+
+2. **Set Up PySpark on Databricks:**
+   
+4. 
+   
