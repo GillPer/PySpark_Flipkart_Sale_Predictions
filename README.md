@@ -35,6 +35,9 @@ This project predicts the discount percentages on Flipkart products based on his
    cd flipkart-sale-prediction
 
 2. **Set Up PySpark on Databricks:**
-- 
-3. **Install Required Libraries:** Ensure necessary packages like matplotlib, seaborn, and pandas are available in your Databricks cluster.
+- Create a new cluster on Databricks.
+- Upload the dataset to DBFS (`/FileStore/train_data.csv`).
+- Import the notebook (`PySpark_Flipkart_Sale_Predictions.ipynb`) to Databricks.
+  
+3. **Install Required Libraries:** Ensure necessary packages like `matplotlib`, `seaborn`, and `pandas` are available in your Databricks cluster.
    
