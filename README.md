@@ -14,7 +14,6 @@ This project leverages PySpark to analyze and predict discount percentages for F
   - [4. Model Building](#4-model-building)
   - [5. Evaluation](#5-evaluation)
   - [6. Results and Visualization](#6-results-and-visualization)
-- [Future Work](#future-work)
 
 ---
 
