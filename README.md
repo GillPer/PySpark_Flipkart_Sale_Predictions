@@ -44,7 +44,7 @@ This project predicts the discount percentages on Flipkart products based on his
 The dataset contains Flipkart product details, ratings, prices, and user feedback, which are used to predict the discount percentage. Key columns include:
 
 - `title`, `maincateg`, `platform`
-- `actprice1 (original price), `price1` (discounted price)
+- `actprice1 (original price)`, `price1` (discounted price)
 - `Rating`, `fulfilled1` (order fulfillment status)
 
 ## Project Steps
